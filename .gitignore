@@ -1,0 +1,34 @@
+# Node.js 関連
+node_modules/
+dist/
+.env
+yarn.lock
+
+# TypeScript コンパイル出力
+*.js
+*.js.map
+*.d.ts
+*.d.ts.map
+
+# OS 固有のファイル
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker 関連
+docker-compose.override.yml
+db_data/
+
+# IDE/エディタ 関連
+.vscode/
+.idea/
+*.swp
+
+# その他
+*.temp
