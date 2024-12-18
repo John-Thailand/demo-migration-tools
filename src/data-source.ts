@@ -1,6 +1,7 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
 import { User } from "./entity/User";
+import { Book } from "./entity/Book";
 
 export const AppDataSource = new DataSource({
   type: "mysql",
@@ -11,7 +12,7 @@ export const AppDataSource = new DataSource({
   database: "test_db", // docker-compose.yml で設定したデータベース名
   synchronize: false,
   logging: true,
-  entities: [User],
+  entities: [User, Book],
   migrations: ["src/migration/*.ts"],
   subscribers: [],
 });
